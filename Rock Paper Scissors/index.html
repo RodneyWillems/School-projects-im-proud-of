@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>rps</title>
+</head>
+    <body>
+    <h1>steen papier schaar</h1>
+    <input type="button" value="start" id="start" onclick="player1()">
+    <form method="POST" id="form1">
+        <h2>speler1</h2>
+        <input type="button" name="steen" id="rps1_1" value="steen" onclick="check11()">
+        <input type="button" name="papier" id="rps1_2" value="papier" onclick="check12()">
+        <input type="button" name="schaar" id="rps1_3" value="schaar" onclick="check13()">
+        <br>
+        <input type="button" id="start1" value="submit" onclick="player2()">
+    <br>
+    </form>
+    <form id="form2" method="POST">
+        <h2>speler2</h2>
+        <input type="button" name="steen" id="rsp2_1" value="steen" onclick="check21()">
+        <input type="button" name="papier" id="rsp2_2" value="papier" onclick="check22()">
+        <input type="button" name="schaar" id="rsp2_3" value="schaar" onclick="check23()">
+        <br>
+        <input type="button" id="start2" value="submit" onclick="winnaar(); test()">
+        <br>
+    </form>
+    <form>
+        <h1 id="winnaar"></h1>
+    </form>
+    <script src="script.js"></script>
+    </body>
+</html>
